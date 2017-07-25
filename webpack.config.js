@@ -5,14 +5,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: {
-    "browser/app": './src/browser/app.js',
-    "renderer/index": './src/renderer/index.js'
+    'browser/app': './src/browser/app.js',
+    'renderer/index': './src/renderer/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: "[name].js"
+    filename: '[name].js'
   },
-  target: "node",
+  target: 'node',
   devtool: 'source-map',
   resolve: {
     extensions: ['.webpack.js', '.web.js', '.js', '.scss']
@@ -20,10 +20,10 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.js?$/,
         exclude: /node_modules/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
       },
       {
         test: /\.js?$/,
