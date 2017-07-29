@@ -6,7 +6,7 @@ Babel and eslint are already set up.
 
 ## how to use
 
-1. fork or import this repository.
+1. fork or import or clone this repository.
 
 <img src="./img/import_01.png" width="500px">
 
